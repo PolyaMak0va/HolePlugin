@@ -18,7 +18,6 @@ namespace HolePlugin
         {
             // основной документ-файл
             Document arDoc = commandData.Application.ActiveUIDocument.Document;
-
             // связанный документ-файл
             Document ovDoc = arDoc.Application.Documents.OfType<Document>().Where(x => x.Title.Contains("ОВ")).FirstOrDefault();
             //если вдруг файл не будет обнаружен, то
